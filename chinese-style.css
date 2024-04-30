@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* General Styling */
+html {
+    background-color: #B4CFEC; /* Background color */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff; /* White background color */
+}
+
+/* Navbar Styling */
+section nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #B4CFEC; /* Background color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+section nav .logo {
+    font-size: 30px;
+    color: #000080; /* Logo text color */
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+section nav .logo span {
+    color: #4169E1; /* Span text color */
+    text-decoration: underline;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+section nav ul li a {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+section nav ul li a:hover {
+    color: #4169E1; /* Hover color */
+}
+
+/* Icons Styling */
+.icon i {
+    right: -10%;
+    padding: 10px;
+    font-size: 25px;
+    color: #0000800; /* Icon color */
+    cursor: pointer; 
+}
+
+.icon i:hover {
+    color: #306ae0;
+}
+
+/* Search Form Styling */
+.search-form {
+    position: absolute;
+    top: 100%;
+    left: 900px;
+    right: 0;
+    display: flex;
+    align-items: right;
+    z-index: 1001;
+    padding: 15px 20px; 
+    border-top: .1rem solid rgba(255,255,255,.2);
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+}
+
+.search-form.active {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+
+.search-form #search-bar {
+    width: 50%;
+    padding: 10px;
+    color: #333;
+    font-size: 10pxpx;
+    border-radius: 5px;
+}
+img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  iframe {
+    width: 40%;
+    height: auto;
+  }
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 30px; /* Increase space between header and content */
+    text-align: center;
+    margin-bottom: 30px; /* Increase space between header and content */
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    text-align: center;
+  }
+  h1, h2, h3 {
+    color: #333;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .flag {
+    max-width: 200px;
+    height: auto;
+    margin: 20px auto;
+  }
+/* Main Content Styling */
+main {
+    padding: 30px; /* Increase space between header and content */
+}
+
+/* Section Headings Styling */
+h2 {
+    color: #333;
+    margin-bottom: 20px; /* Increase space between heading and content */
+}
+
+/* Paragraph Styling */
+p {
+    color: #555;
+    margin-bottom: 20px; /* Increase space between paragraphs */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px; /* Increase space between tables and other elements */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px; /* Increase space between cells */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 50px; /* Increase space between header and page on small screens */
+    }
+}
+
+.footer-distributed {
+    background-color: #B4CFEC; /* Background color */
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #000080; /* Heading color */
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+    margin-bottom: 20px; /* Increase space between heading and content */
+}
+
+.footer-distributed h3 span {
+    color: #4169E1; /* Span text color */
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff; /* Link text color */
+    margin: 30px 0; /* Increase space between links and other elements */
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #63686c;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    color: #000080; /* Icon color */
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #000080; /* Link text color */
+    text-decoration: none;
+}
