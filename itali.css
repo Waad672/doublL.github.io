@@ -1,0 +1,13 @@
+.conrenar{
+    padding: 20px
+}
+.conrenar h1{
+    font-size: 32px;
+    color: #000080;
+    background-color: #000080
+}
+.conrenar p{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
