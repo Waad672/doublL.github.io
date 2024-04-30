@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Language</title>
+    <link rel="stylesheet" href="German.2-style.css" id="styleLink">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+            <div class="logo">
+                <h1>Double<span>L</span></h1>
+            </div>
+
+            <ul class="navbar">
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="#footer">About</a></li>
+                <li><a href="home2.html#review">Review</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="home2.html#heading">Learn</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fas fa-moon" id="mode"></i>
+                <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+                <i class="fas fa-user"></i>
+              </div>
+              <form action="" class="search-form">
+                <input type="search" id="search-bar" placeholder="what you looking for..">
+                
+              </form>
+
+        </nav>
+    </section>
+    <br>
+<body>
+    <header>
+        <h1>German Language</h1>
+        <img src="img/flag.jpg.jpg" alt="German Flag">
+    </header>
+
+    <section id="history">
+        <h2>German Language Civilization</h2>
+        <p>The German language, a member of the West Germanic language family, has a fascinating history and is spoken by over 130 million people worldwide.</p>
+        <p>German, known as "Deutsch", has its roots in the early Germanic tribes, with the earliest written records dating back to the 8th century. Over time, it has evolved through various stages and has been influenced by other languages, including Latin, French, and English.</p>
+        <p>One of the most significant periods in the history of the German language is the Middle High German period (1050-1350), which saw the emergence of a standardized written form and the flourishing of literature, poetry, and religious texts.</p>
+        <p>During the Renaissance and Enlightenment periods, German became a language of science, philosophy, and literature, with renowned figures such as Johann Wolfgang von Goethe and Friedrich Nietzsche contributing greatly to its prestige.</p>
+        <p>Today, German is not only the official language of Germany, but also of Austria, Switzerland, and Liechtenstein. It is also widely spoken in parts of Italy, Belgium, and Luxembourg.</p>
+    </section>
+
+    <section id="grammar">
+        <h2>Basic German Grammar</h2>
+        <p>Learning the basics of German grammar is essential for mastering the language. Here's an introductory video that covers some of the fundamental grammar rules:</p>
+        <iframe src="img/books.Germany.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>German grammar follows a similar structure to other Germanic languages, with nouns, pronouns, verbs, adjectives, adverbs, and prepositions forming the core components of sentences. It also features grammatical cases (nominative, accusative, dative, and genitive) that indicate the role of nouns within sentences.</p>
+        <p>Mastering German grammar requires practice and patience, but with dedication, it becomes easier over time. There are many online resources and language courses available to help you improve your grammar skills.    </p>
+        <li><a href="https://youtu.be/n6S-5bUd3CE?si=NJHqFgQnmHk-Yzmc" target="_blank">Learn more about German grammar from here!</a>
+    </section>
+
+    <section id="conversation">
+        <h2>German Conversation</h2>
+        <p>Listening to native speakers conversing in German is a great way to improve your language skills and understand the nuances of the language. Here's a video of a natural conversation in German:</p>
+        <iframe src="img/conv.Germany.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>German conversations often include greetings, introductions, discussions about daily life, hobbies, interests, and much more. Understanding common phrases and expressions is crucial for effective communication in German-speaking countries.</p>
+        <p>Don't worry if you don't understand everything at first. Practice listening to German conversations regularly, and gradually, you'll become more comfortable with the language.</p>
+    </section>
+   <!--FOOTER-->
+
+   <footer class="footer-distributed" id="footer">
+
+    <div class="footer-left">
+        <h3>D<span>ouble</span>L</h3>
+
+        <p class="footer-links">
+            <a href="home.html">home</a>
+            |
+            <a href="contact.html">contac us</a>
+            |
+            <a href="feedback.html">Feedback</a>
+            |
+            <a href="home2.html#heading">learn</a>
+          </p>
+
+        <p class="footer-company-name">Copyright © 2024 <strong>Double L</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Helwan</span>
+             Cairo. Egypt</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+20 099999999</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="">Double_L@gmail.com</a></p>
+        </div>
+    </div>
+     <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About Us</span>
+            <strong>Double L</strong>: An online language learning platform offering interactive lessons and resources for learners to enhance proficiency in their target language.
+    </p>
+        <div class="footer-icons">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('mode').addEventListener('click', function() {
+        var currentStyle = document.getElementById('styleLink').getAttribute('href');
+        
+        if (currentStyle === 'German.2-style.css') {
+            document.getElementById('styleLink').setAttribute('href', 'German.dark2-style.css');
+        } else {
+            document.getElementById('styleLink').setAttribute('href', 'German.2-style.css');
+        }});
+</script>
+</body>
+</html>

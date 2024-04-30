@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Language</title>
+    <link rel="stylesheet" href="German-style.css" id="styleLink">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/german.js"></script>
+<body>
+    <section>
+        <nav>
+            <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+            <div class="logo">
+                <h1>Double<span>L</span></h1>
+            </div>
+
+            <ul class="navbar">
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="#footer">About</a></li>
+                <li><a href="home2.html#review">Review</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="home2.html#heading">Learn</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fas fa-moon" id="mode"></i>
+                <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+                <i class="fas fa-user"></i>
+              </div>
+              <form action="" class="search-form">
+                <input type="search" id="search-bar" placeholder="what you looking for..">
+                
+              </form>
+
+        </nav>
+    </section>
+    <br>
+    <header>
+        <h1>About the German Language</h1>
+    </header>
+    
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>The German language, also known as Deutsch, is a West Germanic language spoken primarily in Germany, Austria, Switzerland, Liechtenstein, and Luxembourg. It is one of the world's major languages and is widely used in business, science, and culture.</p>
+        </section>
+        
+        <section id="history">
+            <h2>History</h2>
+            <p>The history of the German language dates back to the early Middle Ages. It evolved from Old High German, with the earliest written records dating from around the 8th century AD. Over time, German has been influenced by various languages, including Latin, French, and English.</p>
+        </section>
+        
+        <section id="alphabet">
+            <h2>Alphabet</h2>
+            <p>The German alphabet consists of the same 26 letters as the English alphabet, plus four additional letters:</p>
+            <ul class="letters">
+                <li>A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z</li>
+                <li>Ä, Ö, Ü, ß</li>
+            </ul>
+        </section>
+        <br>
+        <section id="dictionary">
+            <h2>Dictionary</h2>
+            <p>Here are some common German words with their English translations:</p>
+            <table class="table">
+                <tr>
+                    <th>German</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>Hallo</td>
+                    <td>Hello</td>
+                </tr>
+                <tr>
+                    <td>Ja</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Nein</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Danke</td>
+                    <td>Thank you</td>
+                </tr>
+                <tr>
+                    <td>Bitte</td>
+                    <td>Please</td>
+                </tr>
+                <tr>
+                    <td>Guten Tag</td>
+                    <td>Good day</td>
+                </tr>
+                <tr>
+                    <td>Entschuldigung</td>
+                    <td>Excuse me</td>
+                </tr>
+                <tr>
+                    <td>Freund</td>
+                    <td>Friend</td>
+                </tr>
+                <tr>
+                    <td>Auto</td>
+                    <td>Car</td>
+                </tr>
+                <tr>
+                    <td>Haus</td>
+                    <td>House</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+
+    <footer class="footer-distributed" id="footer">
+
+    <div class="footer-left">
+        <h3>D<span>ouble</span>L</h3>
+
+        <p class="footer-links">
+            <a href="home.html">home</a>
+            |
+            <a href="contact.html">contac us</a>
+            |
+            <a href="feedback.html">Feedback</a>
+            |
+            <a href="home2.html#heading">learn</a>
+          </p>
+
+        <p class="footer-company-name">Copyright © 2024 <strong>Double L</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Helwan</span>
+             Cairo. Egypt</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+20 099999999</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="">Double_L@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About Us</span>
+            <strong>Double L</strong>: An online language learning platform offering interactive lessons and resources for learners to enhance proficiency in their target language.
+    </p>
+        <div class="footer-icons">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        document.getElementById('mode').addEventListener('click', function() {
+            var currentStyle = document.getElementById('styleLink').getAttribute('href');
+            
+            if (currentStyle === 'German-style.css') {
+                document.getElementById('styleLink').setAttribute('href', 'German.dark-style.css');
+            } else {
+                document.getElementById('styleLink').setAttribute('href', 'German-style.css');
+            }
+        });
+    </script> 
+</body>
+</html>
