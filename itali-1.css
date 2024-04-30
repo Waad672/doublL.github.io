@@ -116,20 +116,100 @@ section .main .main_content{
     cursor: pointer;
     display: none;
 }
-
-.conrenar{
+/* italian language */
+section{
+    background: rgb(197, 223, 231); 
+}
+.contenar{
     margin: 20px;
 }
-.conrenar h1{
+.contenar h1{
     font-size: 32px;
     color: #000080;
     background-color: #000080;
     text-align: center;
 }
-.conrenar p{
+.contenar p{
     font-size: 18px;
     color: #333;
     margin-bottom: 20px;
+}
+.contenar{
+    padding-top: 10%;
+    margin: 0px 10px
+}
+.contenar h1{
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+.contenar p.start{
+    text-align: center;
+    padding: 40px;
+    background-color: #B4CFEC
+}
+.contenar h2.dimo{
+    text-decoration-line: underline;
+    color: black;
+    font-size: 25px;
+    font-family: cursive;
+    margin: 8px
+}
+.contenar ol {
+    padding-left: 10px;
+    color: #333;
+    font-size: 15px
+}
+.contenar ul{
+    padding-left: 10px
+}
+.contenar p.tb{
+    font-size: 60px;
+    font-family: cursive;
+    color: darkslategray;
+}
+.contenar h2.conclogin{
+    text-align: center;
+    margin-top: 50px;
+    background: black;
+    color: white
+}
+.contenar img.pic{
+    border-radius: 10px;
+    width: 25%;
+    height: 25%;
+}
+
+.contenar ul li a{
+    text-decoration: none;
+    color: #4169E1;
+    font-size: 25px;
+}
+.contenar video{
+    object-position: center;
+}
+.contenar h3.img{
+    font-size: 30px;
+    color: darkslateblue;
+    margin: 30px 0;
+    text-align: center
+}
+.contenar h3.vedio{
+    font-size: 30px;
+    color: darkslateblue;
+    margin: 50px 0;
+    text-align: center
+}
+.contenar h3 strong{
+    font-size: 30px;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: black;
+}
+.contenar h2.basic{
+    margin: 25px 0
 }
 /*footer*/
 
